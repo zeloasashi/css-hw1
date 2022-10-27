@@ -1,0 +1,458 @@
+*{
+    box-sizing: border-box;
+}
+
+/* -----------------------nav--------------------- */
+.wrap{
+    position: relative;
+}
+i{
+    color: #ccc;
+    font-size: 1.5rem;
+}
+nav.navinvisible{
+    transition: .5s;
+    opacity:0;
+}
+nav.navvisible{
+    opacity:1;
+}
+/* .nav-bar{
+    height: 66px;
+    
+} */
+.container-fluid{
+    /* position: sticky; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 15px rgba(128, 128, 128, 0.073);
+    z-index: 10;
+}
+.logo-img img{
+    width: 105px;
+    height: auto;
+    margin: auto;
+    /* background: url(./KANAHEI/logo-white.svg), linear-gradient(#444, #444); */
+   /* filter: drop-shadow(0px 0px 5px #444); */
+}
+
+/* -----------------------主視覺title--------------------- */
+/* .title {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(KANAHEI/01_16x9.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} */
+.title{
+    position: relative;
+}
+/* .carousel{
+    width: 100%;
+    height: 100vh;
+} */
+.carousel-inner img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.title .mainsvg{
+    width: 226px;
+    height: 44px;
+    filter:drop-shadow(3px 3px 5px #715B46) ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ---------------------WORKS---------------------- */
+.works{
+    /* margin: 80px 15px 20px; */
+    padding-top: 7.8rem;
+    padding-bottom: 7.8rem;
+    text-align: center;
+    
+}
+h2,h6,p,.btn{
+    text-align: center;
+    margin: 0 auto;
+    font-family: Lato, sans-serif;
+    color: #444;
+    line-height: 1.6;
+}
+.works img,p{
+    width: 100%;
+}
+.btn a{
+    border: 1px solid #444;
+    border-radius: 50px;
+    padding: 15px 30px;
+    color: #666;
+    font-size: 0.8rem;
+    transition: 0.5s;
+    
+}
+.btn:hover a{
+    text-decoration: none;
+    border: 1px solid #ccc;
+    color: #444;
+}
+/* 圖片會放大縮小 */
+/* @media screen and (min-width: 768px){
+    .works .box{
+        height: 396.8px;
+    }
+}
+@media screen and (min-width: 768px){
+    .works .box2{
+        height: 346.45px;
+    }
+} */
+.line{
+    margin: 5px auto;
+    overflow: hidden;
+    position: relative;
+    height: 324px;
+}
+.fewmany{
+    height: 375px;
+}
+.wakeup{
+    height: 196px;
+}
+.oyazu{
+    height: 121px;
+}
+.hotel{
+    height: 207px;
+}
+.zoo{
+    height: 266px;
+}
+.texthover{
+    opacity: 0;
+}
+.line:hover .imghover::after, .fewmany:hover .imghover::after, .wakeup:hover .imghover::after, .oyazu:hover .imghover::after, .hotel:hover .imghover::after, .zoo:hover .imghover::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #fff;
+    opacity: 0.5;
+    /* transition: .5s; */
+    /* transform: translate3d(0, 100%, 0); */
+    transition-duration: 400ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+.line:hover .texthover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-5%);
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    opacity: 1;
+}
+
+.fewmany:hover .texthover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-10%);
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    opacity: 1;
+
+}
+
+.wakeup:hover .texthover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-25%);
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    opacity: 1;
+}
+.oyazu:hover .texthover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-30%);
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    opacity: 1;
+}
+.hotel:hover .texthover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-20%);
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    opacity: 1;
+}
+.zoo:hover .texthover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-10%);
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    opacity: 1;
+}
+/* ---------------------ARTS---------------------- */
+.arts{
+    background: url(./KANAHEI/1_k_1920_1200.jpg) center center / cover no-repeat;
+    padding-top: 7.8rem;
+    padding-bottom: 7.8rem;
+    background-attachment: fixed;
+    text-align: center;
+}
+.arttitle{
+    margin-bottom: 6.6rem;
+}
+.arts .btn:hover a{
+    color: #444;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+/* ---------------------WALLPAPER---------------------- */
+.wallpaper{
+    padding-top: 7.8rem;
+    padding-bottom: 7.8rem;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+.scroll-snap{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* overflow: hidden; */
+    /* scroll-padding: 0 50%;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start; */
+}
+@media screen and (min-width:720px) {
+    .scroll-snap{
+    justify-content: center;
+
+    }
+}
+/* .scroll-snap::-webkit-scrollbar{
+    display: none;
+} */
+/* .swp{
+    justify-content: center;
+} */
+.wtext{
+    margin-bottom: 5rem;
+}
+.wallpeper .row{
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center; 
+}
+.wallimg{
+    justify-content: space-between;
+}
+.wallbtn{
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wallbtn a:hover{
+    color: #444;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+/* ---------------------LINESTICKER---------------------- */
+.linesticker{
+    text-align: center;
+    padding-top: 7.8rem;
+    padding-bottom: 7.8rem;
+    background: url(./KANAHEI/1_k_1920_1200\ \(1\).jpg) center center / cover no-repeat;
+    background-attachment: fixed;
+}
+.linetext h2,.linetext h6{
+    margin-bottom: 80px;
+    color: #fff;
+}
+.linesticker .btn a{
+    color: #fff;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+.linesticker .btn:hover a{
+    color: #444;
+    background-color: #fff;
+}
+/* ---------------------BOOKS---------------------- */
+.books{
+    text-align: center;
+    padding-top: 7.8rem;
+    padding-bottom: 7.8rem;
+    background-color: #f5f8f9;
+}
+.books .container .col{
+
+    justify-content: center;
+    align-items: center;
+}
+.btext{
+    padding-bottom: 40px;
+}
+.cover,img{
+    width: 148px;
+}
+/* .cover{
+    margin:auto ;
+} */
+/* ---------------------OOVERSEAS---------------------- */
+.overseas{
+    
+    text-align: center;
+    padding-top: 7.8rem;
+    padding-bottom: 7.8rem;
+    background: url(https://www.kanahei.com/kanaheiwp/wp-content/themes/newkanaheicom/img/goods2.jpg) center center / cover no-repeat;
+    
+    background-attachment: fixed;
+}
+.overtext{
+    padding-bottom: 40px;
+}
+.overtext h2,.overtext h6{
+    margin-bottom: 80px;
+    color: #fff;
+}
+.overseas .btn a{
+    color: #fff;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+.overseas .btn:hover a{
+    color: #444;
+    background-color: #fff;
+}
+/* ---------------------MANGA---------------------- */
+.manga{
+    text-align: center;
+    padding-top: 7.8rem;
+    padding-bottom: 7.8rem;
+    background: url(https://www.kanahei.com/kanaheiwp/wp-content/themes/newkanaheicom/img/manga.jpg) center center / cover no-repeat;
+    background-attachment: fixed;
+}
+.mangatext{
+    padding-top: 7.8rem;
+    padding-bottom: 40px;
+}
+.manga .btn:hover a{
+    color: #444;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+/* ---------------------ABOUT---------------------- */
+.about{
+    text-align: center;
+    padding-top: 7.8rem;
+    padding-bottom: 7.8rem;
+}
+.abouttext{
+    padding-bottom: 40px;
+}
+.abouttext p{
+    text-align: center;
+}
+.img-wrap{
+    width: 36px;
+    height: 36px;
+}
+.about h5,.small,p{
+    text-align: left;
+}
+.img-wrap{
+    margin-right: 5px;
+}
+/* ---------------------CONTACT---------------------- */
+.contact{
+    text-align: center;
+    padding-top: 7.8rem;
+    padding-bottom: 7.8rem;
+    background-color: #f5f8f9;
+}
+.contacttitle{
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+.contact .btn {
+    margin-bottom: 5em;
+}
+.contact .btn:hover a{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.contact h5,.small,p{
+    text-align: left;
+}
+.imgflex{
+    display: flex;
+    flex-direction: row;
+
+}
+/* ---------------------FOOTER---------------------- */
+footer{
+    background-color: #444;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.footerimg{
+    width: 125px;
+    filter: drop-shadow(0px 0px 5px #444);
+}
+.copy p{
+    color: #fff;
+    font-size: 0.875rem;
+}
+footer .btnTOP{
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .btnTOP a{
+    text-decoration: none;
+
+}
+@media screen and (max-width:720px) {
+    footer .btnTOP{
+        margin-bottom: 50px;
+    }
+    
+}
+/* footer .btn .small{
+    line-height: 40px;
+} */
