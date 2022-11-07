@@ -63,7 +63,7 @@ nav.navvisible{
     object-fit: cover;
 }
 .title .mainsvg{
-    width: 226px;
+    /* width: 226px; */
     height: 44px;
     filter:drop-shadow(3px 3px 5px #715B46) ;
     position: absolute;
