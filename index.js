@@ -7,3 +7,7 @@ $(window).scroll(function(){
         $('nav').removeClass('navvisible')
     }
 })
+
+$('.nav-btn button').click(function(){
+    $('.nav-btn button').addClass('onone').removeClass('d-none')
+})
