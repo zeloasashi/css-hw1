@@ -9,5 +9,5 @@ $(window).scroll(function(){
 })
 
 $('.nav-btn button').click(function(){
-    $('.nav-btn button').addClass('onone').removeClass('d-none')
+    $('.wrap').addClass('nav-full').removeClass('nminvisible')
 })

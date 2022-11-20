@@ -43,7 +43,11 @@ nav.navvisible{
     /* background: url(./KANAHEI/logo-white.svg), linear-gradient(#444, #444); */
    /* filter: drop-shadow(0px 0px 5px #444); */
 }
-.nav-menu{
+/* ------------點開nav----------- */
+/* .nminvisible{
+    opacity: 0;
+} */
+.nav-full{
     position: absolute;
     top: 0;
     right: 0;
@@ -51,6 +55,18 @@ nav.navvisible{
     bottom: 0;
     background-color: #333;
     z-index: 50;
+    text-align: right;
+    padding: 3rem;
+}
+.nav-full ul li{
+    list-style-type: none;
+
+
+}
+.nav-full ul li a, .nav-full .m-links a{
+    font-size: large;
+    color: #f5f8f9;
+    text-decoration: none;
 }
 /* -----------------------主視覺title--------------------- */
 /* .title {
