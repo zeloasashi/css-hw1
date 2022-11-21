@@ -88,16 +88,49 @@ nav.navinvisible{
 
 
 }
-.nav-full ul li a, .nav-full .m-links a{
+.nav-full ul li a{
     font-size: 1.5rem;
     font-weight: lighter;
     color: #f5f8f9;
     text-decoration: none;
+
 }
+.nav-menu{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+}
+
 .m-links{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
     display: flex;
     justify-content: flex-end;
-    /* align-items: flex-end; */
+    margin-top: 30%;
+}
+.m-links a{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #888;
+    text-decoration: none;
+}
+.nav-menu.trans, .m-links.trans{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1s;
+}
+.nav-menu .blog a{
+    transition-delay: .3s;
+}
+.nav-menu .twitter a{
+    transition-delay: .5s;
+}
+.nav-menu .wall a{
+    transition-delay: .7s;
+}
+.nav-menu .pp a{
+    transition-delay: .9s;
 }
 /* -----------------------主視覺title--------------------- */
 /* .title {
