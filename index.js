@@ -1,13 +1,14 @@
 
 $(window).scroll(function(){
     if($(window).scrollTop() >= ($('main').offset().top - window.screen.height * 2 / 3)) {
-        $('nav').addClass('navvisible')
+        $('nav').removeClass('navinvisible').addClass('navbgc')
     }
-    else{
-        $('nav').removeClass('navvisible')
-    }
+    // else{
+    //     $('nav').addClass('navinvisible').removeClass('navbgc')
+    // }
 })
 
-$('.nav-btn button').click(function(){
-    $('.wrap').addClass('nav-full').removeClass('nminvisible')
+$('.navbtn').click(function(){
+    console.log('nav button click');
+    $('.nav-full').toggleClass('nminvisible')
 })

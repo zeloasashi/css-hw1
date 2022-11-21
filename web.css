@@ -10,15 +10,27 @@ i{
     color: #ccc;
     font-size: 1.5rem;
 }
-nav.navinvisible{
-    transition: .5s;
-    opacity:0;
+.wrap nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
 }
-nav.navvisible{
+.wrap nav.navbgc{
+    background-color: #fff;
+    box-shadow: 0 3px 15px rgba(128, 128, 128, 0.073);
+    transition: .5s;
+}
+nav.navinvisible{
+    opacity:0;
+    transition: .5s;
+    
+}
+/* nav.navvisible{
     opacity:1;
     transition: .5s;
 
-}
+} */
 /* .nav-bar{
     height: 66px;
     
@@ -27,15 +39,10 @@ nav.navvisible{
     outline: none;
 }
 
-.container-fluid{
-    /* position: sticky; */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 3px 15px rgba(128, 128, 128, 0.073);
-    z-index: 10;
-}
+/* .container-fluid{
+    position: sticky;
+    
+} */
 .logo-img img{
     width: 105px;
     height: auto;
@@ -44,19 +51,37 @@ nav.navvisible{
    /* filter: drop-shadow(0px 0px 5px #444); */
 }
 /* ------------點開nav----------- */
-/* .nminvisible{
+.nminvisible{
     opacity: 0;
-} */
+    transition: .5s;
+}
 .nav-full{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #333;
-    z-index: 50;
+    background-color: rgba(45, 45, 45, 0.977);
+    z-index: 10;
     text-align: right;
-    padding: 3rem;
+    padding: 1rem 3rem;
+    opacity: .5s;
+}
+.nmbtn button{
+    outline: none;
+    border: none;
+    background-color: rgba(45, 45, 45, 0.977);
+
+}
+.nmbtn button i{
+    color: #f5f8f9;
+    font-size: 2.5rem;
+    font-weight: light;
+
+    
 }
 .nav-full ul li{
     list-style-type: none;
@@ -64,9 +89,15 @@ nav.navvisible{
 
 }
 .nav-full ul li a, .nav-full .m-links a{
-    font-size: large;
+    font-size: 1.5rem;
+    font-weight: lighter;
     color: #f5f8f9;
     text-decoration: none;
+}
+.m-links{
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
 }
 /* -----------------------主視覺title--------------------- */
 /* .title {
