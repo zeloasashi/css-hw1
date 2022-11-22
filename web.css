@@ -70,30 +70,26 @@ nav.navinvisible{
     padding: 1rem 3rem;
     opacity: .5s;
 }
-.nmbtn button{
+.nfbtn{
     outline: none;
     border: none;
     background-color: rgba(45, 45, 45, 0.977);
-
+    z-index: 15;
 }
 .nmbtn button i{
     color: #f5f8f9;
     font-size: 2.5rem;
     font-weight: light;
-
-    
 }
 .nav-full ul li{
     list-style-type: none;
-
-
 }
 .nav-full ul li a{
     font-size: 1.5rem;
     font-weight: lighter;
     color: #f5f8f9;
     text-decoration: none;
-
+    transition: .5s;
 }
 .nav-menu{
     opacity: 0;
@@ -114,11 +110,42 @@ nav.navinvisible{
     font-weight: lighter;
     color: #888;
     text-decoration: none;
+    transition: .5s;
 }
 .nav-menu.trans, .m-links.trans{
     opacity: 1;
     transform: translateY(0px);
     transition: 1s;
+}
+
+.nav-menu ul .mobile a::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+
+}
+.nav-menu ul .mobile:hover a{
+    color: #fff;
+    font-weight: bold;
+}
+.nav-menu ul .blog:hover a{
+    color: #fff;
+    font-weight: bold;
+}
+.nav-menu ul .twitter:hover a{
+    color: #fff;
+    font-weight: bold;
+}
+.nav-menu ul .wall:hover a{
+    color: #fff;
+    font-weight: bold;
+}
+.nav-menu ul .pp:hover a{
+    color: #fff;
+    font-weight: bold;
+}
+.m-links a:hover{
+    color: #fff;
 }
 /* .nav-menu .mobile.t-mobile{
     opacity: 1;

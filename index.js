@@ -23,7 +23,7 @@ $('.navbtn').click(function(){
     $('nav').toggleClass('navinvisible')
 })
 
-$('.nfbtn').click(function(){
+$('nfbtn').click(function(){
     console.log('nav-full button click');
-    $('.nav-full').addClass('nminvisible')
+    $('.nav-full').toggleClass('nminvisible')
 })
