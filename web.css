@@ -107,7 +107,7 @@ nav.navinvisible{
     transition: 1s;
     display: flex;
     justify-content: flex-end;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 .m-links a{
     font-size: 1.2rem;
@@ -120,18 +120,31 @@ nav.navinvisible{
     transform: translateY(0px);
     transition: 1s;
 }
-.nav-menu .blog a{
-    transition-delay: .3s;
+/* .nav-menu .mobile.t-mobile{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1s;
 }
-.nav-menu .twitter a{
-    transition-delay: .5s;
+.nav-menu .blog.t-blog {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.3s;
 }
-.nav-menu .wall a{
-    transition-delay: .7s;
+.nav-menu .twitter.t-twitter {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.5s;
 }
-.nav-menu .pp a{
-    transition-delay: .9s;
+.nav-menu .wall.t-wall {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.7s;
 }
+.nav-menu .pp.t-pp {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.9s;
+} */
 /* -----------------------主視覺title--------------------- */
 /* .title {
     margin: 0;

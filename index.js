@@ -13,6 +13,11 @@ $('.navbtn').click(function(){
     $('.nav-full').toggleClass('nminvisible');
     $('.nav-menu').toggleClass('trans');
     $('.m-links').toggleClass('trans');
+    // $('.nav-menu .mobile').toggleClass('t-mobile')
+    // $('.nav-menu .blog').toggleClass('t-blog')
+    // $('.nav-menu .twitter').toggleClass('t-twitter')
+    // $('.nav-menu .wall').toggleClass('t-wall')
+    // $('.nav-menu .pp').toggleClass('t-pp')
 })
 $('.navbtn').click(function(){
     $('nav').toggleClass('navinvisible')
