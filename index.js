@@ -1,6 +1,6 @@
 
 $(window).scroll(function(){
-    if($(window).scrollTop() >= ($('main').offset().top - window.screen.height * 2 / 3)) {
+    if($(window).scrollTop() > 0) {
         $('nav').removeClass('navinvisible').addClass('navbgc')
     }
     else{
@@ -8,9 +8,10 @@ $(window).scroll(function(){
     }
 })
 
-$('.navbtn').click(function(){
+$('.nav-btn').click(function(){
     console.log('nav button click');
-    $('.nav-full').toggleClass('nminvisible');
+    $('.nav-full').toggleClass('d-none');
+    // $('.nav-full').toggleClass('nminvisible');
     $('.nav-menu').toggleClass('trans');
     $('.m-links').toggleClass('trans');
     // $('.nav-menu .mobile').toggleClass('t-mobile')
@@ -19,7 +20,7 @@ $('.navbtn').click(function(){
     // $('.nav-menu .wall').toggleClass('t-wall')
     // $('.nav-menu .pp').toggleClass('t-pp')
 })
-$('.navbtn').click(function(){
+$('.nav-btn').click(function(){
     $('nav').toggleClass('navinvisible')
 })
 
