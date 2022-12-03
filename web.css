@@ -588,6 +588,8 @@ footer .btnTOP{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: .3s;
 }
 footer .btnTOP a{
     text-decoration: none;

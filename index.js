@@ -28,3 +28,13 @@ $('nfbtn').click(function(){
     console.log('nav-full button click');
     $('.nav-full').toggleClass('nminvisible')
 })
+
+$(window).scroll(function(){
+    if($(window).scrollTop() >= ($('.contact').offset().top - $(window).height() * 2 / 3)) {
+        $('.btnTOP').css({opacity : 1})
+    }
+    else{
+        $('.btnTOP').css({opacity : 0})
+    
+    }
+})
